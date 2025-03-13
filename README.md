@@ -47,7 +47,7 @@ The objective of this project is to:
 - **Code.ipynb**: Google Colab Notebook containing the analysis.
 - **Problem Statement of Assignment**: Given Assignment
 - **Report.md**: Detailed analysis report.
-- **titanic.csv**: Dataset.
+- **titanic.csv**: Dataset on which analysis is performed .
 
 ## **Contact**
 
