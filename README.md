@@ -64,6 +64,3 @@ The following Python libraries are used in this project:
 - numpy
 - matplotlib
 - seaborn
-You can install the dependencies using:
-```bash
-pip install -r requirements.txt
