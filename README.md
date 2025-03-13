@@ -7,7 +7,7 @@ This repository contains the code and analysis for the **Titanic Dataset**, focu
 ## **Repository Structure**
 
 ```
-Titanic-Dataset-Analysis/
+DAI-Assignment-1-23114020-/
 ├── data/
 │   └── titanic.csv                # Raw Titanic dataset
 ├── notebooks/
