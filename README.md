@@ -10,7 +10,6 @@ Titanic-Dataset-Analysis/
 ├── Code.ipynb 
 ├── Report.md
 ├── README.md 
-└── requirements.txt 
 
 
 ---
@@ -44,8 +43,9 @@ The objective of this project is to:
 ## Files
 
 - **Code.ipynb**: Google Colab Notebook containing the analysis.
+- **Problem Statement of Assignment**: Given Assignment
 - **Report.md**: Detailed analysis report.
-- **requirements.txt**: List of Python dependencies.
+- **titanic.csv**: Dataset.
 
 ## Contributing
 
@@ -56,17 +56,13 @@ If you'd like to contribute to this project, please follow these steps:
 3. Commit your changes.
 4. Submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 For questions or feedback, please contact:
 
 **Your Name**  
-Email: [your.email@example.com](mailto:your.email@example.com)  
-GitHub: [your-username](https://github.com/your-username)
+Email: [mohan_sc@cs.iitr.ac.in](mailto:mohan_sc@cs.iitr.ac.in)  
+GitHub: [chinnisaimohan](https://github.com/chinnisaimohan)
 
 
 ## **Dependencies**
