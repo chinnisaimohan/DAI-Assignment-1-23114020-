@@ -50,3 +50,34 @@ The following Python libraries are used in this project:
 You can install the dependencies using:
 ```bash
 pip install -r requirements.txt
+
+
+Files
+Code.ipynb: Google Colab Notebook containing the analysis.
+
+Report.md: Detailed analysis report.
+
+requirements.txt: List of Python dependencies.
+
+Contributing
+If you'd like to contribute to this project, please follow these steps:
+
+Fork the repository.
+
+Create a new branch for your feature or bugfix.
+
+Commit your changes.
+
+Submit a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Contact
+For questions or feedback, please contact:
+
+Your Name
+
+Email: your.email@example.com
+
+GitHub: your-username
