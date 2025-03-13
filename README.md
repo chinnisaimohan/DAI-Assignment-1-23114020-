@@ -7,8 +7,11 @@ This repository contains the analysis of the **Titanic Dataset** performed in **
 ## **Repository Structure**
 
 Titanic-Dataset-Analysis/
+
 ├── Code.ipynb 
+
 ├── Report.md
+
 ├── README.md 
 
 
