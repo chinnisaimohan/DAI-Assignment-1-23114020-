@@ -42,7 +42,6 @@ The objective of this project is to:
 
 ---
 
-
 ## Files
 
 - **Code.ipynb**: Google Colab Notebook containing the analysis.
@@ -50,20 +49,11 @@ The objective of this project is to:
 - **Report.md**: Detailed analysis report.
 - **titanic.csv**: Dataset.
 
-## Contributing
-
-If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Commit your changes.
-4. Submit a pull request.
-
-## Contact
+## **Contact**
 
 For questions or feedback, please contact:
 
-**Your Name**  
+**Chinni Sai Mohan**  
 Email: [mohan_sc@cs.iitr.ac.in](mailto:mohan_sc@cs.iitr.ac.in)  
 GitHub: [chinnisaimohan](https://github.com/chinnisaimohan)
 
@@ -77,5 +67,6 @@ The following Python libraries are used in this project:
 You can install the dependencies using:
 ```bash
 pip install -r requirements.txt
+
 
 
