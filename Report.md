@@ -1,4 +1,4 @@
-# **Exploratory Data Analysis (EDA) Report: Titanic Dataset**
+# **Report: Titanic Dataset**
 
 ---
 
