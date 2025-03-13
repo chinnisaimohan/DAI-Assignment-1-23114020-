@@ -1,5 +1,4 @@
-
-# Report: Titanic Dataset
+# **Exploratory Data Analysis (EDA) Report: Titanic Dataset**
 
 ---
 
@@ -155,6 +154,3 @@ These insights can be used to build predictive models or further explore the fac
 - Titanic Dataset: [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic/data)
 - Seaborn Documentation: [Seaborn](https://seaborn.pydata.org/)
 - Matplotlib Documentation: [Matplotlib](https://matplotlib.org/)
-
----
-
