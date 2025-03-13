@@ -31,7 +31,7 @@ The objective of this project is to:
 
 ### **1. Open the Google Colab Notebook**
 - Click the link below to open the notebook in Google Colab:
-  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-username/Titanic-Dataset-Analysis/blob/main/Code.ipynb)
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JWMlJG9PpPGoNIKWFcYCrhcdhWBlUJeu#scrollTo=VtR-nLidw3ca)
 
 ### **2. Run the Notebook**
 - Open the notebook in Google Colab.
