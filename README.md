@@ -47,10 +47,6 @@ The following Python libraries are used in this project:
 - matplotlib
 - seaborn
 
-You can install the dependencies using:
-```bash
-pip install -r requirements.txt
-
 ## Files
 
 - **Code.ipynb**: Google Colab Notebook containing the analysis.
@@ -77,4 +73,10 @@ For questions or feedback, please contact:
 **Your Name**  
 Email: [your.email@example.com](mailto:your.email@example.com)  
 GitHub: [your-username](https://github.com/your-username)
+
+
+You can install the dependencies using:
+```bash
+pip install -r requirements.txt
+
 
