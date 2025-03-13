@@ -49,14 +49,6 @@ The objective of this project is to:
 - **Report.md**: Detailed analysis report.
 - **titanic.csv**: Dataset on which analysis is performed .
 
-## **Contact**
-
-For questions or feedback, please contact:
-
-**Chinni Sai Mohan**  
-Email: [mohan_sc@cs.iitr.ac.in](mailto:mohan_sc@cs.iitr.ac.in)  
-GitHub: [chinnisaimohan](https://github.com/chinnisaimohan)
-
 
 ## **Dependencies**
 The following Python libraries are used in this project:
@@ -64,3 +56,12 @@ The following Python libraries are used in this project:
 - numpy
 - matplotlib
 - seaborn
+
+
+## **Contact**
+
+For questions or feedback, please contact:
+
+**Chinni Sai Mohan**  
+Email: [mohan_sc@cs.iitr.ac.in](mailto:mohan_sc@cs.iitr.ac.in)  
+GitHub: [chinnisaimohan](https://github.com/chinnisaimohan)
