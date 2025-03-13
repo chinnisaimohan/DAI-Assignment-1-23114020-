@@ -6,12 +6,11 @@ This repository contains the analysis of the **Titanic Dataset** performed in **
 
 ## **Repository Structure**
 
-
 Titanic-Dataset-Analysis/
-├── Code.ipynb # Google Colab Notebook for analysis
-├── Report.md # Detailed analysis report
-├── README.md # This file
-└── requirements.txt # Python dependencies
+├── Code.ipynb 
+├── Report.md
+├── README.md 
+└── requirements.txt 
 
 
 ---
