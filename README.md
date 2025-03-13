@@ -34,7 +34,7 @@ The objective of this project is to:
   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JWMlJG9PpPGoNIKWFcYCrhcdhWBlUJeu#scrollTo=VtR-nLidw3ca)
 ### **2. Upload Dataset**
 - Upload Dataset.
-- 
+  
 ### **2. Run the Notebook**
 - Open the notebook in Google Colab.
 - Click **Runtime > Run All** to execute all cells in the notebook.
