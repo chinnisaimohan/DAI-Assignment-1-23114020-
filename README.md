@@ -51,33 +51,30 @@ You can install the dependencies using:
 ```bash
 pip install -r requirements.txt
 
+## Files
 
-Files
-Code.ipynb: Google Colab Notebook containing the analysis.
+- **Code.ipynb**: Google Colab Notebook containing the analysis.
+- **Report.md**: Detailed analysis report.
+- **requirements.txt**: List of Python dependencies.
 
-Report.md: Detailed analysis report.
+## Contributing
 
-requirements.txt: List of Python dependencies.
-
-Contributing
 If you'd like to contribute to this project, please follow these steps:
 
-Fork the repository.
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes.
+4. Submit a pull request.
 
-Create a new branch for your feature or bugfix.
+## License
 
-Commit your changes.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Submit a pull request.
+## Contact
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
 For questions or feedback, please contact:
 
-Your Name
+**Your Name**  
+Email: [your.email@example.com](mailto:your.email@example.com)  
+GitHub: [your-username](https://github.com/your-username)
 
-Email: your.email@example.com
-
-GitHub: your-username
