@@ -1,116 +1,74 @@
+# **Titanic Dataset Analysis**
 
-# Report: Titanic Dataset
-
----
-
-## **Introduction**
-The Titanic dataset is one of the most popular datasets for data analysis and machine learning. It contains information about the passengers aboard the RMS Titanic, including their demographics, ticket class, fare, and whether they survived the disaster. This report provides a detailed analysis of the dataset, focusing on data cleaning, exploratory data analysis (EDA), and insights derived from the data.
+This repository contains the code and analysis for the **Titanic Dataset**, focusing on data cleaning, exploratory data analysis (EDA), and visualization of key insights. The goal of this project is to understand the factors that influenced survival on the Titanic.
 
 ---
 
-## **Dataset Overview**
-The Titanic dataset contains the following variables:
-- **PassengerId**: Unique identifier for each passenger.
+## **Repository Structure**
+
+```
+Titanic-Dataset-Analysis/
+├── data/
+│   └── titanic.csv                # Raw Titanic dataset
+├── notebooks/
+│   └── Titanic_Analysis.ipynb     # Jupyter Notebook for analysis
+├── images/                        # Folder for saved visualizations
+│   ├── survival_rate_gender_pclass.png
+│   ├── age_distribution_survival.png
+│   └── fare_distribution_pclass.png
+├── README.md                      # This file
+└── requirements.txt               # Python dependencies
+```
+
+---
+
+## **Project Overview**
+
+### **Objective**
+The objective of this project is to:
+1. Perform **data cleaning** to handle missing values, duplicates, and outliers.
+2. Conduct **exploratory data analysis (EDA)** to uncover patterns and relationships in the data.
+3. Visualize key insights using **bar plots**, **violin plots**, **box plots**, and **heatmaps**.
+
+### **Dataset**
+The dataset used is the **Titanic Dataset**, which contains information about passengers aboard the RMS Titanic, including:
 - **Survived**: Survival status (0 = No, 1 = Yes).
 - **Pclass**: Ticket class (1 = 1st class, 2 = 2nd class, 3 = 3rd class).
-- **Name**: Passenger's name.
-- **Sex**: Gender of the passenger (male/female).
+- **Sex**: Gender of the passenger.
 - **Age**: Age of the passenger.
-- **SibSp**: Number of siblings/spouses aboard.
-- **Parch**: Number of parents/children aboard.
-- **Ticket**: Ticket number.
 - **Fare**: Fare paid for the ticket.
-- **Cabin**: Cabin number.
-- **Embarked**: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
+- **Embarked**: Port of embarkation.
 
 ---
 
-## **Data Cleaning**
+## **Steps Performed**
 
-### **1. Handling Missing Values**
-- **Missing Values Identified**:
-  - `Age`: 177 missing values.
-  - `Cabin`: 687 missing values.
-  - `Embarked`: 2 missing values.
-- **Actions Taken**:
-  - Imputed missing `Age` values with the median age.
-  - Imputed missing `Embarked` values with the mode (most frequent port).
-  - Dropped the `Cabin` column due to excessive missing values.
+### **1. Data Cleaning**
+- Handled missing values in `Age`, `Embarked`, and `Cabin`.
+- Removed duplicate records.
+- Detected and treated outliers in the `Fare` column.
+- Standardized categorical values (e.g., `Sex` and `Embarked`).
 
-### **2. Removing Duplicate Records**
-- No duplicate records were found in the dataset.
+### **2. Exploratory Data Analysis (EDA)**
+- **Univariate Analysis**:
+  - Summary statistics for numerical variables.
+  - Frequency distributions for categorical variables.
+  - Histograms and box plots for numerical variables.
+- **Bivariate Analysis**:
+  - Correlation matrix for numerical variables.
+  - Scatter plots for relationships between numerical variables.
+  - Grouped bar plots and box plots for categorical vs. numerical variables.
+- **Multivariate Analysis**:
+  - Pair plots for multiple numerical variables.
+  - Heatmaps for survival rates by `Sex` and `Pclass`.
 
-### **3. Treating Outliers**
-- Outliers in the `Fare` column were detected using the Interquartile Range (IQR) method.
-- Outliers were removed to ensure the analysis is not skewed.
-
-### **4. Standardizing Categorical Values**
-- Standardized categorical columns (`Sex` and `Embarked`) to ensure consistency (e.g., converting to lowercase or uppercase).
-
----
-
-## **Exploratory Data Analysis (EDA)**
-
-### **1. Univariate Analysis**
-#### **Summary Statistics**
-- **Numerical Variables**:
-  - Mean age: ~29.7 years.
-  - Median fare: £14.45.
-  - Skewness in `Fare` indicates a right-skewed distribution.
-- **Categorical Variables**:
-  - Majority of passengers were male (65%).
-  - Most passengers embarked from Southampton (72%).
-
-#### **Frequency Distributions**
-- **Survival Status**:
-  - 62% of passengers did not survive.
-  - 38% of passengers survived.
-- **Passenger Class**:
-  - 55% of passengers were in 3rd class.
-  - 24% were in 1st class, and 21% were in 2nd class.
-
-#### **Visualizations**
-- **Histograms**:
-  - Age distribution shows most passengers were between 20 and 40 years old.
-- **Box Plots**:
-  - Fare distribution highlights outliers, especially in higher fare ranges.
-
----
-
-### **2. Bivariate Analysis**
-#### **Correlation Matrix**
-- Positive correlation between `Fare` and `Pclass` (higher fares for 1st class).
-- Weak correlation between `Age` and `Survived`.
-
-#### **Scatter Plots**
-- **Age vs Fare**:
-  - No strong linear relationship observed.
-- **SibSp vs Parch**:
-  - Passengers with more siblings/spouses tended to have more parents/children aboard.
-
-#### **Grouped Visualizations**
-- **Survival Rate by Gender**:
-  - Females had a significantly higher survival rate (74%) compared to males (19%).
-- **Survival Rate by Passenger Class**:
-  - 1st class passengers had the highest survival rate (63%), followed by 2nd class (47%) and 3rd class (24%).
-
----
-
-### **3. Multivariate Analysis**
-#### **Pair Plots**
-- Pair plots revealed relationships between numerical variables (`Age`, `Fare`, `SibSp`, `Parch`).
-- KDE plots on the diagonal showed the distribution of each numerical variable.
-
-#### **Heatmaps**
-- Heatmap of survival rates by `Sex` and `Pclass`:
-  - Females in 1st class had the highest survival rate (97%).
-  - Males in 3rd class had the lowest survival rate (13%).
-
-#### **Grouped Comparisons**
-- **Age Distribution by Passenger Class and Survival**:
-  - Younger passengers in 1st and 2nd classes had higher survival rates.
-- **Fare Distribution by Passenger Class and Survival**:
-  - Survivors in 1st class paid significantly higher fares.
+### **3. Visualizations**
+- **Survival Rate by Gender and Passenger Class**:
+  - Bar plot showing survival rates for males and females across passenger classes.
+- **Age Distribution by Survival Status**:
+  - Violin plot showing age distributions for survivors and non-survivors.
+- **Fare Distribution by Passenger Class**:
+  - Box plot showing fare distributions across passenger classes.
 
 ---
 
@@ -118,42 +76,77 @@ The Titanic dataset contains the following variables:
 1. **Survival Rates**:
    - Females and 1st class passengers had the highest survival rates.
    - Males and 3rd class passengers had the lowest survival rates.
-
 2. **Age and Survival**:
    - Children (age < 10) had higher survival rates, especially in 1st and 2nd classes.
-
 3. **Fare and Survival**:
-   - Higher fares were associated with higher survival rates, likely due to better accommodations and priority during evacuation.
-
-4. **Family Size**:
-   - Passengers with 1-2 siblings/spouses or parents/children had higher survival rates compared to those traveling alone or with large families.
+   - Higher fares were associated with higher survival rates.
 
 ---
 
-## **Conclusion**
-The analysis of the Titanic dataset revealed significant patterns in survival rates based on passenger demographics, ticket class, and fare. Key findings include:
-- Females and 1st class passengers were more likely to survive.
-- Younger passengers and those with moderate family sizes had higher survival rates.
-- Higher fares were associated with better chances of survival.
+## **How to Use This Repository**
 
-These insights can be used to build predictive models or further explore the factors influencing survival on the Titanic.
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/your-username/Titanic-Dataset-Analysis.git
+cd Titanic-Dataset-Analysis
+```
+
+### **2. Install Dependencies**
+Ensure you have the required Python libraries installed:
+```bash
+pip install -r requirements.txt
+```
+
+### **3. Run the Jupyter Notebook**
+Open the Jupyter Notebook to explore the analysis:
+```bash
+jupyter notebook notebooks/Titanic_Analysis.ipynb
+```
+
+### **4. View Visualizations**
+The visualizations are saved in the `images/` folder. You can view them directly or access them in the Jupyter Notebook.
+
+---
+
+## **Dependencies**
+- Python 3.x
+- Libraries:
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - jupyter
 
 ---
 
-## **Recommendations**
-1. **Feature Engineering**:
-   - Create new features such as family size (`SibSp + Parch`) and age groups (e.g., child, adult, senior).
-2. **Machine Learning**:
-   - Use the cleaned dataset to build classification models (e.g., logistic regression, random forest) to predict survival.
-3. **Further Analysis**:
-   - Investigate the impact of cabin location on survival (if cabin data is available).
-   - Explore the relationship between embarkation port and survival.
+## **Files**
+- **`data/titanic.csv`**: The raw Titanic dataset.
+- **`notebooks/Titanic_Analysis.ipynb`**: Jupyter Notebook containing the analysis.
+- **`images/`**: Folder containing saved visualizations.
+- **`requirements.txt`**: List of Python dependencies.
 
 ---
 
-## **References**
-- Titanic Dataset: [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic/data)
-- Seaborn Documentation: [Seaborn](https://seaborn.pydata.org/)
-- Matplotlib Documentation: [Matplotlib](https://matplotlib.org/)
+## **Contributing**
+If you'd like to contribute to this project, please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes.
+4. Submit a pull request.
 
 ---
+
+## **License**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## **Contact**
+For questions or feedback, please contact:
+- **Your Name**
+- **Email**: your.email@example.com
+- **GitHub**: [your-username](https://github.com/your-username)
+
+---
+
+This `README.md` file provides a clear and structured overview of your project, making it easy for others to understand and use your repository. Let me know if you need further assistance!
