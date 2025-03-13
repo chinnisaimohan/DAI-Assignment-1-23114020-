@@ -154,20 +154,6 @@ These insights can be used to build predictive models or further explore the fac
 
 ---
 
-## **Visualizations**
-Below are the key visualizations from the analysis:
-
-### **1. Survival Rate by Gender and Passenger Class**
-![Survival Rate by Gender and Passenger Class](survival_rate_gender_pclass.png)
-
-### **2. Age Distribution by Survival Status**
-![Age Distribution by Survival Status](age_distribution_survival.png)
-
-### **3. Fare Distribution by Passenger Class**
-![Fare Distribution by Passenger Class](fare_distribution_pclass.png)
-
----
-
 ## **References**
 - Titanic Dataset: [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic/data)
 - Seaborn Documentation: [Seaborn](https://seaborn.pydata.org/)
